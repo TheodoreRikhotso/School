@@ -2,6 +2,7 @@
 package car;
 
 
+
 import jade.core.Agent;
 import jade.core.behaviours.CyclicBehaviour;
 import jade.core.behaviours.OneShotBehaviour;
@@ -31,7 +32,7 @@ public class CarSellerAgent extends Agent {
 
 		// Create and show the GUI 
 		myGui = new CarSellerGui(this);
-		myGui.showGui();
+		myGui.setVisible(true);
 
 		// Register the book-selling service in the yellow pages
 		DFAgentDescription dfd = new DFAgentDescription();
